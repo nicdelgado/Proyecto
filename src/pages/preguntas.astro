@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL
 import Layout from '../layouts/basic.astro'
 
 const cardClass = 'group overflow-hidden rounded-xl border border-[#D5DFDA] bg-white shadow-sm transition-colors open:border-[#66827A] open:bg-[#E8EFEB]'
@@ -18,7 +19,7 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Estaré exagerando?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>No. Si algo te incomoda, te asusta o te afecta, es razón suficiente para pedir apoyo. No hace falta que sea "grave" ni que otra persona lo vea igual. Para ejemplos, mira <a href="/es-acoso" class={linkClass}>la guía sobre acoso digital</a>.</p>
+                    <p>No. Si algo te incomoda, te asusta o te afecta, es razón suficiente para pedir apoyo. No hace falta que sea "grave" ni que otra persona lo vea igual. Para ejemplos, mira <a href={`${base}es-acoso`} class={linkClass}>la guía sobre acoso digital</a>.</p>
                 </div>
             </details>
 
@@ -39,7 +40,7 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>No sé quién es. La cuenta es anónima. ¿Puedo hacer algo?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Sí. <a href="/que-hacer/evidencia" class={linkClass}>Guarda lo que puedas</a> y <a href="/que-hacer/seguridad" class={linkClass}>protege tus cuentas</a>. Puedes pedir orientación en <a href="/apoyo" class={linkClass}>Bienestar</a> aunque no sepas quién es. No intentes averiguarlo por tu cuenta ni confrontar a alguien que sospeches, porque puede salir mal y debilitar tu caso.</p>
+                    <p>Sí. <a href={`${base}que-hacer/evidencia`} class={linkClass}>Guarda lo que puedas</a> y <a href={`${base}que-hacer/seguridad`} class={linkClass}>protege tus cuentas</a>. Puedes pedir orientación en <a href={`${base}apoyo`} class={linkClass}>Bienestar</a> aunque no sepas quién es. No intentes averiguarlo por tu cuenta ni confrontar a alguien que sospeches, porque puede salir mal y debilitar tu caso.</p>
                 </div>
             </details>
 
@@ -47,7 +48,7 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
                 <summary class={summaryClass}>Fue hace mucho. ¿Todavía sirve?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
                     <p>Puedes buscar apoyo en cualquier momento. Para acciones formales, a veces existen plazos.</p>
-                    <p class="mt-2">Lo más prudente es preguntar pronto en <a href="/apoyo" class={linkClass}>Bienestar</a>, en vez de asumir que ya es tarde.</p>
+                    <p class="mt-2">Lo más prudente es preguntar pronto en <a href={`${base}apoyo`} class={linkClass}>Bienestar</a>, en vez de asumir que ya es tarde.</p>
                 </div>
             </details>
         </section>
@@ -57,28 +58,28 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Me van a hacer represalias?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Nadie debería tomar represalias contra ti por pedir ayuda o denunciar. Si pasa algo, <strong class="text-[#263D3A]">guarda las pruebas</strong> (correos, notas, mensajes) y <strong class="text-[#263D3A]">repórtalo también</strong>. Cuéntale a alguien de confianza y pregunta en <a href="/apoyo" class={linkClass}>Bienestar</a> qué medidas de protección existen. Consulta también <a href="/derechos" class={linkClass}>tus derechos</a>.</p>
+                    <p>Nadie debería tomar represalias contra ti por pedir ayuda o denunciar. Si pasa algo, <strong class="text-[#263D3A]">guarda las pruebas</strong> (correos, notas, mensajes) y <strong class="text-[#263D3A]">repórtalo también</strong>. Cuéntale a alguien de confianza y pregunta en <a href={`${base}apoyo`} class={linkClass}>Bienestar</a> qué medidas de protección existen. Consulta también <a href={`${base}derechos`} class={linkClass}>tus derechos</a>.</p>
                 </div>
             </details>
 
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Y si el acosador es mi docente o tiene un cargo?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Se puede reportar igual. Es una de las situaciones que más miedo da y por eso es importante pedir acompañamiento antes de dar cualquier paso. Mira la parte específica en <a href="/que-hacer/queja" class={linkClass}>la ruta de queja</a>.</p>
+                    <p>Se puede reportar igual. Es una de las situaciones que más miedo da y por eso es importante pedir acompañamiento antes de dar cualquier paso. Mira la parte específica en <a href={`${base}que-hacer/queja`} class={linkClass}>la ruta de queja</a>.</p>
                 </div>
             </details>
 
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Y si me dicen que estoy mintiendo o que "me lo busqué"?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Eso se llama <strong class="text-[#263D3A]">revictimización</strong> y no es aceptable. Tener fotos, tus datos o tus mensajes en internet no te hace responsable de lo que otra persona haga con ellos. Tienes derecho a ser tratada/o con respeto: consulta <a href="/derechos" class={linkClass}>tus derechos</a>.</p>
+                    <p>Eso se llama <strong class="text-[#263D3A]">revictimización</strong> y no es aceptable. Tener fotos, tus datos o tus mensajes en internet no te hace responsable de lo que otra persona haga con ellos. Tienes derecho a ser tratada/o con respeto: consulta <a href={`${base}derechos`} class={linkClass}>tus derechos</a>.</p>
                 </div>
             </details>
 
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Y si me da vergüenza contarlo?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Es normal, y no tienes que contarlo todo de una vez. Puedes empezar con una sola persona, o con una sola frase: "me está pasando algo y necesito ayuda". Mira <a href="/apoyo" class={linkClass}>las opciones de apoyo</a>.</p>
+                    <p>Es normal, y no tienes que contarlo todo de una vez. Puedes empezar con una sola persona, o con una sola frase: "me está pasando algo y necesito ayuda". Mira <a href={`${base}apoyo`} class={linkClass}>las opciones de apoyo</a>.</p>
                 </div>
             </details>
         </section>
@@ -88,7 +89,7 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>Ya borré todo. ¿Se perdió el caso?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Puede haber copias en otros dispositivos, en la cuenta de otra persona que lo vio, o en los datos que puedes descargar de la red. Tu relato también cuenta. Mira <a href="/que-hacer/evidencia" class={linkClass}>la guía para guardar pruebas</a>.</p>
+                    <p>Puede haber copias en otros dispositivos, en la cuenta de otra persona que lo vio, o en los datos que puedes descargar de la red. Tu relato también cuenta. Mira <a href={`${base}que-hacer/evidencia`} class={linkClass}>la guía para guardar pruebas</a>.</p>
                 </div>
             </details>
 
@@ -102,7 +103,7 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Qué hago si me pidieron fotos íntimas y las envié?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Enviarlas no es tu culpa. La responsabilidad es de quien las usa para hacerte daño. Si te están chantajeando, <strong class="text-[#263D3A]">no pagues y no envíes más</strong>. Guarda la conversación y revisa <a href="/que-hacer/" class={linkClass}>qué hacer ahora</a>.</p>
+                    <p>Enviarlas no es tu culpa. La responsabilidad es de quien las usa para hacerte daño. Si te están chantajeando, <strong class="text-[#263D3A]">no pagues y no envíes más</strong>. Guarda la conversación y revisa <a href={`${base}que-hacer/`} class={linkClass}>qué hacer ahora</a>.</p>
                 </div>
             </details>
 
@@ -147,14 +148,14 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Y si no quiero denunciar, pero quiero que pare?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Puedes pedir orientación sobre otras opciones, como el procedimiento alternativo pedagógico en la ruta de género, o medidas de protección académica. Mira <a href="/derechos" class={linkClass}>tus derechos</a> y <a href="/apoyo" class={linkClass}>las opciones de apoyo</a>.</p>
+                    <p>Puedes pedir orientación sobre otras opciones, como el procedimiento alternativo pedagógico en la ruta de género, o medidas de protección académica. Mira <a href={`${base}derechos`} class={linkClass}>tus derechos</a> y <a href={`${base}apoyo`} class={linkClass}>las opciones de apoyo</a>.</p>
                 </div>
             </details>
 
             <details class={cardClass}>
                 <summary class={summaryClass}>¿Puedo pedir que bajen lo que publicaron?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Sí, con la opción de reportar de la plataforma, y en algunos casos también ante la autoridad de protección de datos. Primero guarda las pruebas. Mira <a href="/que-hacer/" class={linkClass}>qué hacer ahora</a> y <a href="/derechos" class={linkClass}>tus derechos</a>.</p>
+                    <p>Sí, con la opción de reportar de la plataforma, y en algunos casos también ante la autoridad de protección de datos. Primero guarda las pruebas. Mira <a href={`${base}que-hacer/`} class={linkClass}>qué hacer ahora</a> y <a href={`${base}derechos`} class={linkClass}>tus derechos</a>.</p>
                 </div>
             </details>
         </section>
@@ -164,7 +165,7 @@ const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] u
             <details class={cardClass}>
                 <summary class={summaryClass}>Fue mi pareja o mi expareja. ¿También es acoso?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
                 <div class={answerClass}>
-                    <p>Sí. Revisarte el celular, exigirte contraseñas, pedirte tu ubicación o difundir fotos tuyas puede ser <strong class="text-[#263D3A]">violencia</strong>, aunque venga de alguien que quieres o quisiste. Si estás en Bogotá y eres mujer, puedes llamar a la Línea Púrpura ((+57) 300 755 1846). También puedes revisar las <a href="/que-hacer/seguridad" class={linkClass}>guías para proteger tus cuentas y dispositivos</a>.</p>
+                    <p>Sí. Revisarte el celular, exigirte contraseñas, pedirte tu ubicación o difundir fotos tuyas puede ser <strong class="text-[#263D3A]">violencia</strong>, aunque venga de alguien que quieres o quisiste. Si estás en Bogotá y eres mujer, puedes llamar a la Línea Púrpura ((+57) 300 755 1846). También puedes revisar las <a href={`${base}que-hacer/seguridad`} class={linkClass}>guías para proteger tus cuentas y dispositivos</a>.</p>
                 </div>
             </details>
 

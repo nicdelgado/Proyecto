@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL
 import Layout from '../../layouts/basic.astro'
 ---
 
@@ -12,7 +13,7 @@ import Layout from '../../layouts/basic.astro'
             <h2 id="urgencia" class="mb-4 text-xl font-bold text-[#263D3A] sm:text-2xl">Si es una urgencia</h2>
             <div class="space-y-4 text-base leading-7 text-[#263D3A]">
                 <p><strong>¿Estás en peligro o te amenazan con hacerte daño?</strong> Llama al <strong>123</strong>. Si estás en el campus, avisa también a la <strong>vigilancia de la universidad</strong>.</p>
-                <p><strong>¿Te chantajean con fotos o videos íntimos?</strong> No pagues, no envíes nada más y no borres la conversación. Ve al paso 2 y luego a <a href="/que-hacer/queja" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">la página para poner una queja</a>.</p>
+                <p><strong>¿Te chantajean con fotos o videos íntimos?</strong> No pagues, no envíes nada más y no borres la conversación. Ve al paso 2 y luego a <a href={`${base}que-hacer/queja`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">la página para poner una queja</a>.</p>
             </div>
         </section>
 
@@ -36,7 +37,7 @@ import Layout from '../../layouts/basic.astro'
                 <li><strong class="font-semibold text-[#263D3A]">Publicaciones en páginas de "confesiones"</strong> o cuentas anónimas, con el enlace.</li>
             </ul>
             <p class="my-4 leading-7 text-[#465B56]">Si el problema afecta tu proceso académico, guarda también tus <strong class="text-[#263D3A]">entregas, notas publicadas y mensajes sobre calificaciones o asistencia</strong>. Pueden mostrar si hubo represalias.</p>
-            <p class="leading-7 text-[#465B56]">Guía completa: <a href="/que-hacer/evidencia" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">cómo guardar evidencia</a>.</p>
+            <p class="leading-7 text-[#465B56]">Guía completa: <a href={`${base}que-hacer/evidencia`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">cómo guardar evidencia</a>.</p>
         </section>
 
         <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6 lg:p-7">
@@ -46,7 +47,7 @@ import Layout from '../../layouts/basic.astro'
                 <li>Si crees que una pareja o expareja tiene acceso a tu celular, hazlo <strong class="text-[#263D3A]">desde otro dispositivo</strong>.</li>
                 <li><strong class="font-semibold text-[#263D3A]">Activa la verificación en dos pasos</strong> y <strong class="text-[#263D3A]">cierra las sesiones</strong> que no reconozcas.</li>
             </ul>
-            <p class="mt-4 leading-7 text-[#465B56]">Guías por aplicación: <a href="/que-hacer/seguridad" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">seguridad digital</a></p>
+            <p class="mt-4 leading-7 text-[#465B56]">Guías por aplicación: <a href={`${base}que-hacer/seguridad`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">seguridad digital</a></p>
         </section>
 
         <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6 lg:p-7">
@@ -62,13 +63,13 @@ import Layout from '../../layouts/basic.astro'
                 <li><strong class="font-semibold text-[#263D3A]">Colectivos o grupos estudiantiles</strong> con experiencia en acompañar casos.</li>
             </ul>
             <p class="my-4 leading-7 text-[#465B56]">Contarlo ayuda a pensar con calma y a no sentirte aislado/a.</p>
-            <p class="leading-7 text-[#465B56]">Apoyo emocional: <a href="/apoyo" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">recursos de apoyo</a>.</p>
+            <p class="leading-7 text-[#465B56]">Apoyo emocional: <a href={`${base}apoyo`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">recursos de apoyo</a>.</p>
         </section>
 
         <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6 lg:p-7">
             <h2 class="mb-3 border-b border-[#D5DFDA] pb-3 text-lg font-semibold text-[#263D3A] sm:mb-4 sm:text-xl">Paso 6. Decide si quieres poner una queja</h2>
             <p class="leading-7 text-[#465B56]">Ponerla es una opción, no una obligación. La universidad tiene una ruta de atención y te explicamos paso a paso cómo funciona, qué puedes esperar y <strong class="text-[#263D3A]">qué hacer si quien te acosa es docente, funcionario o tiene un cargo de representación estudiantil</strong>.</p>
-            <p class="mt-4 leading-7 text-[#465B56]">Paso a paso: <a href="/que-hacer/queja" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">conoce la ruta de queja</a>.</p>
+            <p class="mt-4 leading-7 text-[#465B56]">Paso a paso: <a href={`${base}que-hacer/queja`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">conoce la ruta de queja</a>.</p>
         </section>
 
         <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6 lg:p-7">

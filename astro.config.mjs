@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://nicdelgado.github.io',
-  base: '/Proyecto',
+  base: '/Proyecto/',
 });

@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL
 import Layout from '../layouts/basic.astro'
 ---
 
@@ -21,7 +22,7 @@ import Layout from '../layouts/basic.astro'
                 <li><strong class="text-[#263D3A]">Decides tú.</strong> La persona afectada tiene plena autoridad para elegir si participa o no en la etapa del procedimiento alternativo pedagógico, o si pasa directamente al proceso disciplinario. <a href="https://minas.medellin.unal.edu.co/images/Bienestar/ruta_de_evacuacion.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Fuente UNAL</a>.</li>
                 <li><strong class="text-[#263D3A]">Tu caso tiene seguimiento.</strong> El Área de Acompañamiento Integral verifica la gestión realizada, la restitución de los derechos de la persona afectada y su situación actual. <a href="https://www.humanas.unal.edu.co/2017/bienestar/application/files/8915/6700/8975/FolletoRuta-Sede_Bogota_3.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Fuente UNAL</a>.</li>
                 <li><strong class="text-[#263D3A]">El protocolo contempla la difusión no consentida de contenido íntimo.</strong> Entre los tipos de violencia que incluye aparece la pornografía no consentida. <a href="https://derecho.bogota.unal.edu.co/old_web/fileadmin/Repositorio_Genero/TALLER_LINEAS.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Documento UNAL</a>.</li>
-                <li><strong class="text-[#263D3A]">Está en revisión.</strong> Un documento de la Facultad de Derecho indica que el protocolo se encuentra en proceso de revisión y actualización. Conviene confirmar los pasos vigentes con <a href="/apoyo" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Bienestar Universitario</a>. <a href="https://derecho.bogota.unal.edu.co/old_web/fileadmin/Repositorio_Genero/TALLER_LINEAS.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Documento UNAL</a>.</li>
+                <li><strong class="text-[#263D3A]">Está en revisión.</strong> Un documento de la Facultad de Derecho indica que el protocolo se encuentra en proceso de revisión y actualización. Conviene confirmar los pasos vigentes con <a href={`${base}apoyo`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Bienestar Universitario</a>. <a href="https://derecho.bogota.unal.edu.co/old_web/fileadmin/Repositorio_Genero/TALLER_LINEAS.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A]">Documento UNAL</a>.</li>
             </ul>
         </section>
 
@@ -117,7 +118,7 @@ import Layout from '../layouts/basic.astro'
 
         <section class="rounded-xl border border-[#D5DFDA] bg-[#E8EFEB] p-4 sm:rounded-2xl sm:p-6">
             <h2 class="mb-3 text-xl font-semibold text-[#263D3A] sm:text-2xl">Libertad de expresión y acoso</h2>
-            <p class="leading-7 text-[#465B56]">La libertad de expresión está protegida por la Constitución (artículo 20), pero <strong class="text-[#263D3A]">no incluye</strong> insultar, amenazar, difamar, exponer datos personales ni hostigar a alguien de forma repetida. Criticar una idea o una decisión es distinto de atacar a una persona. Para ejemplos, visita <a href="/es-acoso" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">la guía sobre acoso digital</a>.</p>
+            <p class="leading-7 text-[#465B56]">La libertad de expresión está protegida por la Constitución (artículo 20), pero <strong class="text-[#263D3A]">no incluye</strong> insultar, amenazar, difamar, exponer datos personales ni hostigar a alguien de forma repetida. Criticar una idea o una decisión es distinto de atacar a una persona. Para ejemplos, visita <a href={`${base}es-acoso`} class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">la guía sobre acoso digital</a>.</p>
         </section>
     </article>
 </Layout>
