@@ -1,0 +1,80 @@
+---
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/'
+const links = [
+    { href: '/', label: 'Inicio' },
+    { href: '/apoyo', label: 'Apoyo' },
+    { href: '/preguntas', label: 'Preguntas' },
+    { href: '/derechos', label: 'Derechos' },
+]
+const linkClass = 'block rounded-lg px-4 py-2 text-sm font-medium text-[#304E49] transition-colors hover:bg-[#E8EFEB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]'
+const activeLinkClass = 'bg-[#E8EFEB] text-[#263D3A]'
+---
+
+<nav class="border-b border-[#D5DFDA] bg-white shadow-sm" aria-label="Navegación principal">
+    <div class="nav-layout mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <details class="mobile-menu">
+            <summary class="flex cursor-pointer list-none items-center gap-3 rounded-lg border border-[#D5DFDA] px-4 py-2 font-semibold text-[#304E49] transition-colors hover:bg-[#E8EFEB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">
+                <span>Menú</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-[#304E49]">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </summary>
+            <ul class="mobile-menu-panel rounded-xl border border-[#D5DFDA] bg-white p-2 shadow-lg">
+                {links.map(({ href, label }) => (
+                    <li>
+                        <a href={href} aria-current={pathname === href ? 'page' : undefined} class:list={[linkClass, 'w-full', pathname === href && activeLinkClass]}>{label}</a>
+                    </li>
+                ))}
+            </ul>
+        </details>
+        <ul class="desktop-links items-center gap-2">
+            {links.map(({ href, label }) => (
+                <li>
+                    <a href={href} aria-current={pathname === href ? 'page' : undefined} class:list={[linkClass, 'text-center', pathname === href && activeLinkClass]}>{label}</a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</nav>
+
+<style>
+    .nav-layout {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu {
+        position: relative;
+    }
+
+    .mobile-menu-panel {
+        display: none;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 0;
+        z-index: 50;
+        width: min(14rem, calc(100vw - 2rem));
+    }
+
+    .mobile-menu[open] .mobile-menu-panel {
+        display: block;
+    }
+
+    .desktop-links {
+        display: none;
+    }
+
+    @media (min-width: 48rem) {
+        .nav-layout {
+            justify-content: center;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .desktop-links {
+            display: flex;
+        }
+    }
+</style>

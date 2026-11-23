@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/basic.astro'
+---
+
+<Layout title="Apoyo dentro de la universidad">
+    <article class="mx-auto w-full max-w-3xl space-y-5 px-4 py-8 sm:space-y-6 sm:px-6 sm:py-10 lg:max-w-4xl lg:py-14 xl:space-y-8">
+        <header class="mb-6 sm:mb-8">
+            <h1 class="mb-4 text-3xl font-bold leading-tight text-[#263D3A] sm:text-4xl lg:text-5xl">Apoyo dentro de la universidad</h1>
+            <p class="text-base leading-7 text-[#465B56] sm:text-lg sm:leading-8">Puedes buscar orientación y acompañamiento, aunque todavía no hayas decidido poner una queja.</p>
+        </header>
+
+        <div class="grid gap-4 md:grid-cols-2 md:gap-6">
+            <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6">
+                <h2 class="mb-3 text-lg font-semibold text-[#263D3A] sm:text-xl">División de Acompañamiento Integral (Bienestar Universitario)</h2>
+                <p class="mb-4 leading-7 text-[#465B56]">Es el lugar al que puedes acudir para orientación y acompañamiento, sin necesidad de haber decidido poner una queja.</p>
+                <dl class="space-y-3 text-base leading-7 text-[#465B56]">
+                    <div>
+                        <dt class="font-semibold text-[#263D3A]">Dónde</dt>
+                        <dd>Ciudad Universitaria, Edificio 103 (Polideportivo), piso 2.</dd>
+                    </div>
+                    <div>
+                        <dt class="font-semibold text-[#263D3A]">Teléfono</dt>
+                        <dd><a href="tel:+5713165000" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">(57-1) 316 5000</a>, extensiones <strong class="text-[#263D3A]">88888</strong> o <strong class="text-[#263D3A]">17209</strong>.</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6">
+                <h2 class="mb-3 text-lg font-semibold text-[#263D3A] sm:text-xl">Proyecto de Equidad de Género</h2>
+                <p class="mb-4 leading-7 text-[#465B56]">Atiende orientación y reportes de violencias basadas en género, que incluyen las que ocurren por medios digitales.</p>
+                <dl class="space-y-3 text-base leading-7 text-[#465B56]">
+                    <div>
+                        <dt class="font-semibold text-[#263D3A]">Dónde</dt>
+                        <dd>Edificio 103, oficina 102.</dd>
+                    </div>
+                    <div>
+                        <dt class="font-semibold text-[#263D3A]">Correo de orientación y reporte</dt>
+                        <dd><a href="mailto:Proygenero_bog@unal.edu.co" class="wrap-break-word font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">Proygenero_bog@unal.edu.co</a></dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="rounded-xl border border-[#D5DFDA] bg-white p-4 shadow-sm sm:rounded-2xl sm:p-6 md:col-span-2">
+                <h2 class="mb-3 text-lg font-semibold text-[#263D3A] sm:text-xl">Comité de Asuntos de Género (Sede Bogotá)</h2>
+                <dl class="text-base leading-7 text-[#465B56]">
+                    <div>
+                        <dt class="font-semibold text-[#263D3A]">Correo</dt>
+                        <dd><a href="mailto:asungenero_bog@unal.edu.co" class="wrap-break-word font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">asungenero_bog@unal.edu.co</a></dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+
+        <section class="rounded-xl border border-[#D5DFDA] bg-[#E8EFEB] p-4 sm:rounded-2xl sm:p-6">
+            <h2 class="mb-3 text-lg font-semibold text-[#263D3A] sm:text-xl">Qué puedes pedir</h2>
+            <p class="leading-7 text-[#465B56]">Que te escuchen, que te expliquen la ruta de atención, que te orienten sobre qué opciones tienes y a qué otras personas o servicios acudir.</p>
+        </section>
+
+        <aside class="rounded-xl border border-[#66827A] bg-white p-4 sm:rounded-2xl sm:p-6" aria-label="Consejo para proteger tu privacidad">
+            <p class="leading-7 text-[#465B56]">Si sospechas que tu correo @unal está comprometido o que alguien lo lee, escribe desde <strong class="text-[#263D3A]">otro correo</strong> o ve en persona. Consulta también la <a href="/que-hacer/seguridad#correo-unal" class="font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]">guía para proteger tu correo @unal</a>.</p>
+        </aside>
+
+        <a href="/que-hacer/queja" class="flex w-full items-center justify-center rounded-lg bg-[#304E49] px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#304E49] sm:inline-flex sm:w-fit sm:px-6 sm:text-base">
+            Para poner una queja formal, consulta la ruta de atención
+        </a>
+    </article>
+</Layout>

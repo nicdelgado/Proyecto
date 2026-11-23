@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/basic.astro'
+
+const cardClass = 'group overflow-hidden rounded-xl border border-[#D5DFDA] bg-white shadow-sm transition-colors open:border-[#66827A] open:bg-[#E8EFEB]'
+const summaryClass = 'flex cursor-pointer list-none items-center justify-between gap-4 p-4 text-left font-semibold leading-7 text-[#263D3A] hover:bg-[#E8EFEB] focus-visible:outline-2 focus-visible:outline-[#66827A] sm:p-5'
+const answerClass = 'border-t border-[#D5DFDA] px-4 pb-4 pt-3 text-base leading-7 text-[#465B56] sm:px-5 sm:pb-5'
+const linkClass = 'font-semibold text-[#304E49] underline decoration-[#66827A] underline-offset-4 hover:text-[#263D3A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#304E49]'
+---
+
+<Layout title="Preguntas frecuentes sobre acoso digital">
+    <article class="mx-auto w-full max-w-3xl space-y-6 px-4 py-8 sm:space-y-8 sm:px-6 sm:py-10 lg:max-w-4xl lg:py-14">
+        <header>
+            <h1 class="mb-3 text-3xl font-bold leading-tight text-[#263D3A] sm:text-4xl lg:text-5xl">Preguntas frecuentes</h1>
+        </header>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold text-[#263D3A] sm:text-2xl">1. Dudas sobre lo que estoy viviendo</h2>
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Estaré exagerando?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>No. Si algo te incomoda, te asusta o te afecta, es razón suficiente para pedir apoyo. No hace falta que sea "grave" ni que otra persona lo vea igual. Para ejemplos, mira <a href="/es-acoso" class={linkClass}>la guía sobre acoso digital</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>Dicen que es una broma. ¿Y si de verdad lo es?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Una broma no te deja sintiéndote humillada/o, con miedo o con ganas de esconderte. Y una broma que se repite después de que pediste que pare ya no es una broma. Que sea "en internet" no la hace menos real.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Cuenta aunque no haya amenazas?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Sí. El acoso digital también puede ser insistencia, exclusión de grupos, burlas, rumores o control. No necesita una amenaza explícita.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>No sé quién es. La cuenta es anónima. ¿Puedo hacer algo?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Sí. <a href="/que-hacer/evidencia" class={linkClass}>Guarda lo que puedas</a> y <a href="/que-hacer/seguridad" class={linkClass}>protege tus cuentas</a>. Puedes pedir orientación en <a href="/apoyo" class={linkClass}>Bienestar</a> aunque no sepas quién es. No intentes averiguarlo por tu cuenta ni confrontar a alguien que sospeches, porque puede salir mal y debilitar tu caso.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>Fue hace mucho. ¿Todavía sirve?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Puedes buscar apoyo en cualquier momento. Para acciones formales, a veces existen plazos.</p>
+                    <p class="mt-2">Lo más prudente es preguntar pronto en <a href="/apoyo" class={linkClass}>Bienestar</a>, en vez de asumir que ya es tarde.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold text-[#263D3A] sm:text-2xl">2. Miedo y consecuencias</h2>
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Me van a hacer represalias?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Nadie debería tomar represalias contra ti por pedir ayuda o denunciar. Si pasa algo, <strong class="text-[#263D3A]">guarda las pruebas</strong> (correos, notas, mensajes) y <strong class="text-[#263D3A]">repórtalo también</strong>. Cuéntale a alguien de confianza y pregunta en <a href="/apoyo" class={linkClass}>Bienestar</a> qué medidas de protección existen. Consulta también <a href="/derechos" class={linkClass}>tus derechos</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Y si el acosador es mi docente o tiene un cargo?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Se puede reportar igual. Es una de las situaciones que más miedo da y por eso es importante pedir acompañamiento antes de dar cualquier paso. Mira la parte específica en <a href="/que-hacer/queja" class={linkClass}>la ruta de queja</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Y si me dicen que estoy mintiendo o que "me lo busqué"?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Eso se llama <strong class="text-[#263D3A]">revictimización</strong> y no es aceptable. Tener fotos, tus datos o tus mensajes en internet no te hace responsable de lo que otra persona haga con ellos. Tienes derecho a ser tratada/o con respeto: consulta <a href="/derechos" class={linkClass}>tus derechos</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Y si me da vergüenza contarlo?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Es normal, y no tienes que contarlo todo de una vez. Puedes empezar con una sola persona, o con una sola frase: "me está pasando algo y necesito ayuda". Mira <a href="/apoyo" class={linkClass}>las opciones de apoyo</a>.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold text-[#263D3A] sm:text-2xl">3. Pruebas</h2>
+            <details class={cardClass}>
+                <summary class={summaryClass}>Ya borré todo. ¿Se perdió el caso?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Puede haber copias en otros dispositivos, en la cuenta de otra persona que lo vio, o en los datos que puedes descargar de la red. Tu relato también cuenta. Mira <a href="/que-hacer/evidencia" class={linkClass}>la guía para guardar pruebas</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Puedo grabar a la persona o escribirle para "sacarle" pruebas?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Es mejor que no. Provocar o confrontar puede empeorar la situación. Guarda lo que ya existe.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Qué hago si me pidieron fotos íntimas y las envié?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Enviarlas no es tu culpa. La responsabilidad es de quien las usa para hacerte daño. Si te están chantajeando, <strong class="text-[#263D3A]">no pagues y no envíes más</strong>. Guarda la conversación y revisa <a href="/que-hacer/" class={linkClass}>qué hacer ahora</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Puedo mostrar las pruebas a mis amigos?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Mejor solo a quien necesites. Y si hay <strong class="text-[#263D3A]">fotos o videos íntimos</strong>, no los reenvíes a nadie, ni siquiera "para que lo vean". Cada copia suma al daño.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold text-[#263D3A] sm:text-2xl">4. La queja y el proceso</h2>
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Es obligatorio poner una queja?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>No. Puedes recibir apoyo sin denunciar, y decidir después.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Es confidencial?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Depende de la dependencia y del tipo de caso. Al momento de realizar la queja en la mesa de ayuda de la universidad tienes la opción de hacer esto de forma anonima si es lo que deseas.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Me van a obligar a enfrentar a la otra persona?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Según la ruta de atención de violencias de género de la universidad, la persona afectada decide si participa o no en el procedimiento alternativo, y puede pasar directamente al proceso disciplinario.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Cuánto demora?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>No lo sabemos con certeza, y no queremos prometerte plazos que no podemos garantizar. Pregúntalo en la dependencia al iniciar.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Y si no quiero denunciar, pero quiero que pare?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Puedes pedir orientación sobre otras opciones, como el procedimiento alternativo pedagógico en la ruta de género, o medidas de protección académica. Mira <a href="/derechos" class={linkClass}>tus derechos</a> y <a href="/apoyo" class={linkClass}>las opciones de apoyo</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>¿Puedo pedir que bajen lo que publicaron?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Sí, con la opción de reportar de la plataforma, y en algunos casos también ante la autoridad de protección de datos. Primero guarda las pruebas. Mira <a href="/que-hacer/" class={linkClass}>qué hacer ahora</a> y <a href="/derechos" class={linkClass}>tus derechos</a>.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl font-semibold text-[#263D3A] sm:text-2xl">5. Pareja, expareja y docentes</h2>
+            <details class={cardClass}>
+                <summary class={summaryClass}>Fue mi pareja o mi expareja. ¿También es acoso?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Sí. Revisarte el celular, exigirte contraseñas, pedirte tu ubicación o difundir fotos tuyas puede ser <strong class="text-[#263D3A]">violencia</strong>, aunque venga de alguien que quieres o quisiste. Si estás en Bogotá y eres mujer, puedes llamar a la Línea Púrpura ((+57) 300 755 1846). También puedes revisar las <a href="/que-hacer/seguridad" class={linkClass}>guías para proteger tus cuentas y dispositivos</a>.</p>
+                </div>
+            </details>
+
+            <details class={cardClass}>
+                <summary class={summaryClass}>Yo sigo con esa persona. ¿Igual puedo pedir ayuda?<span aria-hidden="true" class="shrink-0 text-2xl font-normal text-[#66827A] transition-transform group-open:rotate-45">+</span></summary>
+                <div class={answerClass}>
+                    <p>Sí. Pedir orientación no te obliga a terminar nada ni a decidir hoy. Si crees que podrías estar en peligro, llama al <strong class="text-[#263D3A]">123</strong>.</p>
+                </div>
+            </details>
+        </section>
+    </article>
+</Layout>
