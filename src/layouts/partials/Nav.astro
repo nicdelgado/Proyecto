@@ -24,7 +24,7 @@ const activeLinkClass = 'bg-[#E8EFEB] text-[#263D3A]'
             <ul class="mobile-menu-panel rounded-xl border border-[#D5DFDA] bg-white p-2 shadow-lg">
                 {links.map(({ href, label }) => (
                     <li>
-                        <a href={`${base}${href.replace(/^\//, '')}`} aria-current={normalizedPathname === href ? 'page' : undefined} class:list={[linkClass, 'w-full', normalizedPathname === href && activeLinkClass]}>{label}</a>
+                        <a href={`${base}/${href.replace(/^\//, '')}`} aria-current={normalizedPathname === href ? 'page' : undefined} class:list={[linkClass, 'w-full', normalizedPathname === href && activeLinkClass]}>{label}</a>
                     </li>
                 ))}
             </ul>
@@ -32,7 +32,7 @@ const activeLinkClass = 'bg-[#E8EFEB] text-[#263D3A]'
         <ul class="desktop-links items-center gap-2">
             {links.map(({ href, label }) => (
                 <li>
-                    <a href={`${base}${href.replace(/^\//, '')}`} aria-current={normalizedPathname === href ? 'page' : undefined} class:list={[linkClass, 'text-center', normalizedPathname === href && activeLinkClass]}>{label}</a>
+                    <a href={`${base}/${href.replace(/^\//, '')}`} aria-current={normalizedPathname === href ? 'page' : undefined} class:list={[linkClass, 'text-center', normalizedPathname === href && activeLinkClass]}>{label}</a>
                 </li>
             ))}
         </ul>
